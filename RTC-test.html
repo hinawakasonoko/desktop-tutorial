@@ -36,7 +36,6 @@ document.getElementById('share').onclick = () =>
     localStream = stream;//映像をグローバル変数に
 const theirID = document.getElementById('their-id').value;
 const mediaConnection = peer.call(theirID, localStream,{videoBandwidth: 14000});
-  setEventListener(mediaConnection);
   });}
 
 document.getElementById('camera').onclick = () =>
@@ -48,7 +47,6 @@ document.getElementById('camera').onclick = () =>
     localStream = stream;
 const theirID = document.getElementById('their-id').value;
 const mediaConnection = peer.call(theirID, localStream,{videoBandwidth: 14000});
-  setEventListener(mediaConnection);
   });}
 
 document.getElementById('stop').onclick = () =>{
